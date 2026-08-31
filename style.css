@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  /* background-color: #87ceeb; */
+  /* changing this on my own
+     font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* height: 100vh; */
+}
+
+body {
+  background-color: burlywood;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.calculator.light {
+  background: #f9f9f9;
+}
+
+.display {
+  background: #000;
+  color: #fff;
+  text-align: right;
+  padding: 20px 10px;
+  font-size: 2.5rem;
+  grid-column: span 4;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 0%;
+  margin-bottom: 45%;
+  margin-right: 0%;
+}
+
+.display.light.display {
+  background: #fff;
+  color: #000;
+}
+
+.button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 60%;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.calculator.light button {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.calculator.light button:hover {
+  background-color: #ccc;
+}
+
+.operator {
+  background-color: #f90;
+}
+
+.operator:hover {
+  background-color: #e68a00;
+}
+
+.calculator.light .operator:hover {
+  background-color: #0084ff;
+}
+.gray {
+  background-color: #d81b1b;
+  color: black;
+}
+
+.calculator.light.gray {
+  background-color: #d3d3d3;
+  color: #000;
+}
+
+.zero {
+  grid-column: span 2;
+  border-radius: 35px;
+  width: 150px;
+  justify-content: flex-start;
+  padding-left: 25px;
+}
